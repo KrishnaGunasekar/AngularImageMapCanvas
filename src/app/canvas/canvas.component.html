@@ -7,25 +7,24 @@ Point B
 
 {{ pointB | json}}
 
+Rect Coords
+
+{{RectangeCoords | json }}
+
+Image Shapes
+
+{{ImageShapes | json}}
+
+
 <input type="button" (click)="clearCanvas()" value="Clear Canvas & Load Image">
-<input type="button" (click)="drawLines()" value="Draw Lines">
-
-<input type="button" (click)="arrangeCoordinates()" value="Draw Rectangles Coordinates">
+<input type="button" (click)="AddShape()" value="Add Shape">
 
 
-<input type="button" (click)="createRectangleLine()" value="Create Rectangle Line">
-<input type="button" (click)="GetFinalRectangle()" value="GetFinalRectangle">
-
-<input type="text" ([ngModel])="adjustY" />
 
 <br />
 <br />
 
-Previous Position {{previousPosition | json}}
-<br>
-Current Position {{currentPosition | json}}
-<br>
-<br>
+
 <div>
 
     <!-- <div class="box" (mouseenter)="onEvent($event)"
